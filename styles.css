@@ -66,13 +66,7 @@ p { margin: 0; }
 }
 .header__inner { display: flex; align-items: center; gap: 2rem; height: 72px; }
 .logo { display: flex; align-items: center; gap: .6rem; }
-.logo__mark { width: 42px; height: 42px; }
-.logo__text {
-  font: italic 800 1.6rem/0.9 var(--head);
-  letter-spacing: .04em;
-  display: flex; flex-direction: column;
-}
-.logo__text small { font: 600 .62rem/1.3 var(--body); letter-spacing: .32em; color: var(--orange); font-style: normal; }
+.logo__img { height: 50px; width: auto; }
 .nav { display: flex; gap: 1.75rem; margin-left: auto; }
 .nav a { font-size: .92rem; color: var(--muted); transition: color .15s; }
 .nav a:hover { color: var(--text); }
@@ -86,6 +80,7 @@ p { margin: 0; }
   pointer-events: none;
 }
 .hero__inner { position: relative; }
+.hero__logo { width: min(440px, 80vw); height: auto; margin: 0 0 2rem -6px; filter: drop-shadow(0 8px 30px rgba(255, 122, 0, .25)); }
 .hero h1 {
   font-size: clamp(2.8rem, 8vw, 6rem);
   font-weight: 800; font-style: italic; text-transform: uppercase;
