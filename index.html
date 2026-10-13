@@ -55,6 +55,50 @@
       </div>
     </section>
 
+    <!-- ============ ESTOQUE ============ -->
+    <section class="section" id="estoque">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow">Estoque</p>
+            <h2>Carros disponíveis</h2>
+          </div>
+          <p class="section__sub">Todos os veículos passam por avaliação. Clique em um carro para ver fotos, detalhes e falar com a gente.</p>
+        </div>
+
+        <div class="filters" role="search">
+          <label class="field field--grow">
+            <span class="sr-only">Buscar</span>
+            <input type="search" id="fBusca" placeholder="Buscar marca ou modelo…">
+          </label>
+          <label class="field">
+            <span class="sr-only">Marca</span>
+            <select id="fMarca"><option value="">Todas as marcas</option></select>
+          </label>
+          <label class="field">
+            <span class="sr-only">Ordenar</span>
+            <select id="fOrdem">
+              <option value="destaque">Destaques primeiro</option>
+              <option value="menor">Menor preço</option>
+              <option value="maior">Maior preço</option>
+              <option value="novo">Mais novos</option>
+              <option value="km">Menor km</option>
+            </select>
+          </label>
+          <label class="check">
+            <input type="checkbox" id="fVendidos"> <span>Mostrar vendidos</span>
+          </label>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+        <div class="grid" id="grid"></div>
+        <div class="empty" id="empty" hidden>
+          <p>Nenhum carro encontrado com esses filtros.</p>
+          <a class="btn btn--ghost btn--sm js-whats" data-msg="Olá! Estou procurando um carro específico, vocês podem me ajudar?" href="#" target="_blank" rel="noopener">Procuramos para você</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ INVESTIMENTO / COMO FUNCIONA ============ -->
     <section class="pricing" id="como-funciona">
       <div class="container">
@@ -110,50 +154,6 @@
             <p>Podemos fazer as fotos e todo o material, e você continua com o seu veículo, utilizando normalmente, enquanto trabalhamos na venda através dos anúncios online.</p>
           </div>
           <a href="#agenciamento" class="btn btn--primary">Quero anunciar</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ESTOQUE ============ -->
-    <section class="section" id="estoque">
-      <div class="container">
-        <div class="section__head">
-          <div>
-            <p class="eyebrow">Estoque</p>
-            <h2>Carros disponíveis</h2>
-          </div>
-          <p class="section__sub">Todos os veículos passam por avaliação. Clique em um carro para ver fotos, detalhes e falar com a gente.</p>
-        </div>
-
-        <div class="filters" role="search">
-          <label class="field field--grow">
-            <span class="sr-only">Buscar</span>
-            <input type="search" id="fBusca" placeholder="Buscar marca ou modelo…">
-          </label>
-          <label class="field">
-            <span class="sr-only">Marca</span>
-            <select id="fMarca"><option value="">Todas as marcas</option></select>
-          </label>
-          <label class="field">
-            <span class="sr-only">Ordenar</span>
-            <select id="fOrdem">
-              <option value="destaque">Destaques primeiro</option>
-              <option value="menor">Menor preço</option>
-              <option value="maior">Maior preço</option>
-              <option value="novo">Mais novos</option>
-              <option value="km">Menor km</option>
-            </select>
-          </label>
-          <label class="check">
-            <input type="checkbox" id="fVendidos"> <span>Mostrar vendidos</span>
-          </label>
-        </div>
-
-        <p class="results-count" id="resultsCount" aria-live="polite"></p>
-        <div class="grid" id="grid"></div>
-        <div class="empty" id="empty" hidden>
-          <p>Nenhum carro encontrado com esses filtros.</p>
-          <a class="btn btn--ghost btn--sm js-whats" data-msg="Olá! Estou procurando um carro específico, vocês podem me ajudar?" href="#" target="_blank" rel="noopener">Procuramos para você</a>
         </div>
       </div>
     </section>
